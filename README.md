@@ -1,18 +1,24 @@
 ﻿# Unreal Engine 4 VR Advanced Starter Project READ ME
 
-This project is part of [Udacity](https://www.udacity.com "Udacity - Be in demand")'s [Learn Unreal VR Nanodegree Foundation Program](https://www.udacity.com)
+This project is part of [Udacity](https://www.udacity.com "Udacity - Be in demand")'s [Unreal Engine 4 VR Nanodegree](https://www.udacity.com) and is based on the template project provided by the course in [GitHub](https://github.com/udacity//Unreal-Advanced-Project-Template).
 
-This is your first chance to build an Unreal VR experience based around locomotion. You’ll create a find-the-object style of game, create a set of blueprints that randomly hides an object, and develop a locomotion method that allows you to move around the apartment so that you can find the object.   
+This project makes a game within Unreal Engine 4 for room-scale VR. It is needed to utilize motion controllers for a kitchen-themed interaction game. Spawn object (plate) at random amongst several predefined places. 
 
+## Necessary Controller
+ - The project is developed and tested with Oculus Rift
 
 ## Necessary Software
-- [Epic Games Launcher, Unreal Engine 4.14 or 4.15](https://www.unrealengine.com/en-US/blog)
-- [SteamVR](http://store.steampowered.com/steamvr) OR [Oculus Home](https://www.oculus.com/setup/)
+- [Epic Games Launcher, Unreal Engine 4.15](https://www.unrealengine.com/en-US/blog)
+- [Oculus Home](https://www.oculus.com/setup/)
 
-<img src="https://d17h27t6h515a5.cloudfront.net/topher/2017/November/5a0ef225_epiclauncher/epiclauncher.png" width="50%"/>
+## Audio Assets
+- Original samples downloaded from [freesound.org](https://freesound.org)
 
-## New To Github?
+## Detailed description
+The game is started by the player pressing the Start button. The game can continue infinitely long. There is timer showing how long was played continuously after start of the game. 
+The goal is to find the hidden object(plate) and bring it to the target place. After the plate is hold at the target place it is teleported to a new random hidden place.
+Score is increased after every successful goal completion.
+The game score and time can be restartarted at any point pressing the start button.
 
-Github is one of the best ways for software developers to store their code and easily make changes that are then tracked and easily shareable with your team of developers. If you would like to learn more about Github, Udacity offers [a free course on how to use Github](https://www.udacity.com/course/how-to-use-git-and-github--ud775). For the puposes of the VR Nanodgree, you will simply need to download this project by:
-1. Clicking **"Clone or download"**
-2. Clicking **"Download ZIP"**
+The player can move around by teleporting himself using the right controller trigger button.
+The hidden object can be bring to the target position using the left hand grip button.
