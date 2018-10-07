@@ -15,10 +15,15 @@ This project makes a game within Unreal Engine 4 for room-scale VR. It is needed
 - Original samples downloaded from [freesound.org](https://freesound.org)
 
 ## Detailed description
-The game is started by the player pressing the Start button. The game can continue infinitely long. There is timer showing how long was played continuously after start of the game. 
 The goal is to find the hidden object(plate) and bring it to the target place. After the plate is hold at the target place it is teleported to a new random hidden place.
-Score is increased after every successful goal completion.
-The game score and time can be restartarted at any point pressing the start button.
 
-The player can move around by teleporting himself using the right controller trigger button.
-The hidden object can be bring to the target position using the left hand grip button.
+- Player should go over the "Red button" in the scene with one of the controllers meshes to start the game.
+- The game can continue infinitely long.
+- There is timer showing how long was played continuously after start of the game. 
+- When game is started/restarted the score and timer are restarted
+- Score is increased after every successful goal completion.
+- The player can move around by teleporting himself using the right controller trigger button. Holding the trigger button is drawn the treactory for teleportation. When the trigger button is released a ball is triggered according the treactory and when it touches its final point the pawn /player is teleportat at that point.
+- The hidden object can be bring to the target position using the left controller grip button.
+- The timer starts on event (StartTimer) casted by overlaping "Red button" in the scene with any of the controllers.
+- Audio cue is played when plate is at target place
+- Audio cue is played in loop when the level starts and different sound is played when the game is started
